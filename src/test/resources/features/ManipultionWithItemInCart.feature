@@ -3,8 +3,8 @@ Feature: Manipulation of the item in the cart
   Background:
     Given site "https://www.amazon.com" is opened
     And search for "Apple MacBook Pro 15" in the search field on the page header
-    And open the first result on the search result page using the search field
-    And click on the button Add to cart on the product cart page using the search field
+    And open the first result on the search result page
+    And click on the button Add to cart on the product cart page
     And click on the Cart button on the Add cart result page
 
   Scenario: Increase the quantity of item
@@ -14,5 +14,5 @@ Feature: Manipulation of the item in the cart
 
   Scenario: Remove item from cart
     When click on the Delete link on the Shopping cart page
-    Then the Shopping cart is "empty"
+    Then the Shopping cart is empty
 

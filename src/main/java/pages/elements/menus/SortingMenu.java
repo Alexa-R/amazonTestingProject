@@ -1,14 +1,16 @@
 package pages.elements.menus;
 
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class SortingMenu {
-    private SelenideElement priceHighToLowParameter = $(By.xpath("//*[@id=\"s-result-sort-select_2\"]"));
+    private ElementsCollection parametersList = $$(By.id("//*[@class=\"a-nostyle a-list-link\"]/li"));
 
-    public SelenideElement getPriceHighToLowParameter() {
-        return priceHighToLowParameter;
+    public ElementsCollection getParametersList() {
+        return parametersList;
     }
 }

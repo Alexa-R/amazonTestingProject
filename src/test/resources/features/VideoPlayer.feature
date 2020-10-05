@@ -3,8 +3,8 @@ Feature: Video player
   Background:
     Given site "https://www.amazon.com" is opened
     And search for "Super Mario 3D All-Stars - Nintendo Switch" in the search field on the page header
-    And open the first result on the search result page using the search field
-    And click on the Video on the product cart page using the search field
+    And open the first result on the search result page
+    And click on the Video on the product cart page
     And run the video on the Video Window
 
   Scenario: run the video on the Video Window

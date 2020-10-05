@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class HomePage {
-    private SelenideElement slider = $(By.xpath("//*[@id=\"gw-desktop-herotator\"]/div/div/div"));
+    private SelenideElement slider = $(By.id("gw-desktop-herotator"));
 
     public SelenideElement getSlider() {
         return slider;

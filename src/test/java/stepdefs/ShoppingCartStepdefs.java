@@ -24,9 +24,9 @@ public class ShoppingCartStepdefs {
         shoppingCartPageService.clickOnDeleteLink();
     }
 
-    @Then("the Shopping cart is {string}")
-    public void theShoppingCartIsEmpty(String arg0) {
-        assertTrue(shoppingCartPageService.isTitleContainsEmpty(arg0));
+    @Then("the Shopping cart is empty")
+    public void theShoppingCartIsEmpty() {
+        assertTrue(shoppingCartPageService.isTitleContainsEmpty());
     }
 
     @Then("the Quantity dropdown box contains in the title {string}")

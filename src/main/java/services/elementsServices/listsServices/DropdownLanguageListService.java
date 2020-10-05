@@ -10,10 +10,10 @@ public class DropdownLanguageListService {
     }
 
     public void selectSpanishInLanguageList() {
-        dropdownLanguageList.getSpanishLanguage().click();
+        dropdownLanguageList.getLanguagesCollection().get(0).click();
     }
 
     public boolean isSpanishInLanguageListSelected(){
-        return dropdownLanguageList.getSpanishLanguageSelected().isSelected();
+        return dropdownLanguageList.getLanguagesCollection().get(0).isSelected();
     }
 }

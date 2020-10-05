@@ -10,6 +10,6 @@ public class SortingMenuService {
     }
 
     public void selectPriceHighToLowParameter(){
-        sortingMenu.getPriceHighToLowParameter().click();
+        sortingMenu.getParametersList().get(3).click();
     }
 }

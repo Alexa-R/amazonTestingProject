@@ -15,4 +15,4 @@ Feature: Change site language
     And select the Espanol - ES language from the Language Settings menu
     And click on Save Changes button on the Language Settings menu
     And scroll to page footer
-    Then the "Español" is displayed in the language menu on the site footer
+    Then the "ES" is displayed in the language menu on the site footer

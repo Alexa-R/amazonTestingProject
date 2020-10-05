@@ -13,14 +13,13 @@ public class AddToCartResultPageStepdefs {
         this.addToCartResultPageService = addToCartResultPageService;
     }
 
-
     @And("click on the Cart button on the Add cart result page")
     public void clickOnTheCartButtonOnTheAddCartResultPage() {
         addToCartResultPageService.clickCartButton();
     }
 
-    @Then("the message that the item has been {string} is displayed")
+    @Then("the message that the item has been added is displayed")
     public void theMessageThatTheItemHasBeenIsDisplayed(String arg0) {
-        assertTrue(addToCartResultPageService.isTitleContainsAddedDisplayed(arg0));
+        assertTrue(addToCartResultPageService.isItemAdded());
     }
 }

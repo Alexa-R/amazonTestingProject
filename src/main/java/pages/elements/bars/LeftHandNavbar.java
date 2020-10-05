@@ -1,8 +1,10 @@
 package pages.elements.bars;
 
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
+import pages.elements.lists.ProductSubcategoriesList;
 
 import java.util.ArrayList;
 
@@ -10,14 +12,20 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class LeftHandNavbar {
-    private SelenideElement electronicsCategory = $(By.xpath("//*[@id=\"hmenu-content\"]/ul[1]/li[6]/a"));
-    private ArrayList<SelenideElement> categories = new ArrayList<SelenideElement>() {{
-        add(electronicsCategory);
-    }};
-    private ElementsCollection CategoryItems = $$(categories);
+    private ElementsCollection productCategoriesList = $$(By.xpath("//*[@id=\"hmenu-content\"]/ul[1]/li"));
 
-
-    public ElementsCollection getCategoryItems() {
-        return CategoryItems;
+    public ElementsCollection getProductCategoriesList() {
+        return productCategoriesList;
     }
+
+    /*private ProductSubcategoriesList productSubcategoriesList = new ProductSubcategoriesList();
+    private ProductCategoriesList productCategoriesList = new ProductCategoriesList();
+
+    public ProductCategoriesList getProductCategoriesList() {
+        return productCategoriesList;
+    }
+
+    public ProductSubcategoriesList getProductSubcategoriesList() {
+        return productSubcategoriesList;
+    }*/
 }

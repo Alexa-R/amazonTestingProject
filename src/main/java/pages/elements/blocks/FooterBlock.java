@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 public class FooterBlock {
-    private SelenideElement footerBox = $(By.xpath("//*[@id=\"navFooter\"]"));
-    private SelenideElement dropdownLanguageMenu = $(By.xpath("//*[@id=\"icp-touch-link-language\"]/span[1]"));
+    private SelenideElement footerBox = $(By.id("navFooter"));
+    private SelenideElement dropdownLanguageMenu = $(By.id("icp-touch-link-language"));
 
     public SelenideElement getFooterBox() {
         return footerBox;

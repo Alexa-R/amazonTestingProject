@@ -18,6 +18,6 @@ public class FilterBarService {
     }
 
     public void clickOnAvgCustomerReviewFourStarsAndUp(){
-        filterBar.getAvgCustomerReviewFourStarsAndUp().click();
+        filterBar.getReviewFourStarsAndUp().click();
     }
 }

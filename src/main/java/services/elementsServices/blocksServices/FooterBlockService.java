@@ -17,7 +17,7 @@ public class FooterBlockService {
         footerBlock.getDropdownLanguageMenu().click();
     }
 
-    public String getTextDropdownLanguageMenu(){
-       return footerBlock.getDropdownLanguageMenu().getText();
+    public boolean getTextDropdownLanguageMenu(String language){
+       return footerBlock.getDropdownLanguageMenu().getText().toUpperCase().contains(language.toUpperCase());
     }
 }

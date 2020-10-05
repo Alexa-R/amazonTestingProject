@@ -1,19 +1,16 @@
 package pages.elements.lists;
 
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class DropdownLanguageList {
-    private SelenideElement spanishLanguage = $(By.xpath("//*[@id=\"nav-flyout-icp\"]/div[2]/a[1]/span"));
-    private SelenideElement spanishLanguageSelected = $(By.xpath("//*[@id=\"nav-flyout-icp\"]/div[2]/span[2]/span"));
+    private ElementsCollection languagesCollection = $$(By.xpath("//*[@id=\"nav-flyout-icp\"]/div[2]/a"));
 
-    public SelenideElement getSpanishLanguage() {
-        return spanishLanguage;
-    }
-
-    public SelenideElement getSpanishLanguageSelected() {
-        return spanishLanguageSelected;
+    public ElementsCollection getLanguagesCollection() {
+        return languagesCollection;
     }
 }

@@ -9,19 +9,11 @@ public class AddToCartResultPageService {
         this.addToCartResultPage = addToCartResultPage;
     }
 
-    public boolean isTitleContainsAddedDisplayed(String added) {
-        if (addToCartResultPage.getIsTitleContainsAddedRightPanel().isDisplayed()) {
-            return addToCartResultPage.getIsTitleContainsAddedRightPanel().getText().contains(added);
-        } else {
-            return addToCartResultPage.getIsTitleContainsAddedOnPage().getText().contains(added);
-        }
+    public boolean isItemAdded() {
+        return addToCartResultPage.getConfirmMessage().isDisplayed();
     }
 
     public void clickCartButton() {
-        if (addToCartResultPage.getCartButtonRightPanel().isDisplayed()) {
-            addToCartResultPage.getCartButtonRightPanel().click();
-        } else {
-            addToCartResultPage.getCartButtonOnPage().click();
-        }
+        addToCartResultPage.getCartButton().click();
     }
 }

@@ -12,7 +12,7 @@ public class LanguageSettingsStepdefs {
 
     @And("select the Espanol - ES language from the Language Settings menu")
     public void selectTheEspanolESLanguageFromTheLanguageSettingsMenu() {
-        languageSettingsMenuService.selectSpanishLanguage();
+        languageSettingsMenuService.selectSecondLanguage();
     }
 
     @And("click on Save Changes button on the Language Settings menu")

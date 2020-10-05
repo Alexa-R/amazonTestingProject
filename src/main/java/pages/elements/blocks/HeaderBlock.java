@@ -1,20 +1,22 @@
 package pages.elements.blocks;
 
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
+import pages.elements.boxes.DropdownCategoryBox;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class HeaderBlock {
-    private SelenideElement accountsAndLists = $(By.xpath("//*[@id=\"nav-link-accountList\"]/div/span"));
-    private SelenideElement searchField = $(By.xpath("//*[@id=\"twotabsearchtextbox\"]"));
-    private SelenideElement searchButton = $(By.xpath("//*[@id=\"nav-search\"]/form/div[2]/div/input"));
-    private SelenideElement leftHandNavbarGamburgerMenu = $(By.xpath("//*[@id=\"nav-hamburger-menu\"]/i"));
-    private SelenideElement todaysDealsField = $(By.xpath("//*[@id=\"nav-xshop\"]/a[1]"));
-    private SelenideElement logotype = $(By.xpath("//*[@id=\"nav-logo\"]/a/span[1]"));
-    private SelenideElement dropdownCategoryBox = $(By.xpath("//*[@id=\"searchDropdownBox\"]"));
-    private SelenideElement returnsAndOrdersField = $(By.xpath("//*[@id=\"nav-orders\"]"));
-    private SelenideElement dropdownLanguageMenu = $(By.xpath("//*[@id=\"icp-nav-flyout\"]/span"));
+    private SelenideElement accountsAndLists = $(By.id("nav-link-accountList"));
+    private SelenideElement searchField = $(By.id("twotabsearchtextbox"));
+    private SelenideElement leftHandNavbarGamburgerMenu = $(By.id("nav-hamburger-menu"));
+    private SelenideElement todaysDealsField = $(By.id("nav-xshop"));
+    private SelenideElement logotype = $(By.id("nav-logo"));
+    private SelenideElement dropdownCategoryBox = $(By.id("searchDropdownBox"));
+    private SelenideElement returnsAndOrdersField = $(By.id("nav-orders"));
+    private SelenideElement dropdownLanguageMenu = $(By.id("icp-nav-flyout"));
 
     public SelenideElement getAccountsAndLists() {
         return accountsAndLists;
@@ -22,10 +24,6 @@ public class HeaderBlock {
 
     public SelenideElement getSearchField() {
         return searchField;
-    }
-
-    public SelenideElement getSearchButton() {
-        return searchButton;
     }
 
     public SelenideElement getLeftHandNavbarGamburgerMenu() {
@@ -51,4 +49,6 @@ public class HeaderBlock {
     public SelenideElement getDropdownLanguageMenu() {
         return dropdownLanguageMenu;
     }
+
+
 }

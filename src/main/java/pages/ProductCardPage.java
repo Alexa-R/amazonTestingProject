@@ -5,12 +5,13 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class ProductCardUsingSearchFieldPage {
-    private SelenideElement productTitle = $(By.xpath("//*[@id=\"productTitle\"]"));
-    private SelenideElement seeAllBuyingOptionsButton = $(By.xpath("//*[@id=\"buybox-see-all-buying-choices-announce\"]"));
-    private SelenideElement addToCartButton = $(By.xpath("//*[@id=\"add-to-cart-button\"]"));
-    private SelenideElement addToCartOnBuingOptions = $(By.xpath("//*[@id=\"a-autoid-0\"]/span/input"));
-    private SelenideElement landingPicture = $(By.xpath("//*[@id=\"landingImage\"]"));
+public class ProductCardPage {
+    private SelenideElement productTitle = $(By.id("productTitle"));
+    private SelenideElement seeAllBuyingOptionsButton = $(By.id("buybox-see-all-buying-choices-announce"));
+   // private SelenideElement addToCartButton = $(By.name("submit.add-to-cart or submit.addToCart"));
+   private SelenideElement addToCartButton = $(By.xpath("//*[@name=\"submit.add-to-cart\" or @name=\"submit.addToCart\"]"));
+    //private SelenideElement addToCartOnBuingOptions = $(By.xpath("//*[@id=\"a-autoid-0\"]/span/input"));
+    private SelenideElement landingPicture = $(By.id("landingImage"));
     private SelenideElement video = $(By.xpath("//*[@id=\"altImages\"]/ul/li[contains(@class, 'video') and contains(@class, 'item')]"));
 
     public SelenideElement getProductTitle() {
@@ -25,9 +26,9 @@ public class ProductCardUsingSearchFieldPage {
         return seeAllBuyingOptionsButton;
     }
 
-    public SelenideElement getAddToCartOnBuingOptions() {
+   /* public SelenideElement getAddToCartOnBuingOptions() {
         return addToCartOnBuingOptions;
-    }
+    }*/
 
     public SelenideElement getLandingPicture() {
         return landingPicture;

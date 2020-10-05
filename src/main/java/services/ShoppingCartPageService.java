@@ -21,7 +21,7 @@ public class ShoppingCartPageService {
         return shoppingCartPage.getQuantityButton().getText();
     }
 
-    public boolean isTitleContainsEmpty(String empty) {
-        return shoppingCartPage.getCartIsEmptyTitle().getText().contains(empty);
+    public boolean isTitleContainsEmpty() {
+        return shoppingCartPage.getIsCartEmpty().isDisplayed();
     }
 }

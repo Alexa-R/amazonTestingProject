@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 public class SignInPasswordPage {
-    private SelenideElement passwordTextArea = $(By.xpath("//*[@id=\"ap_password\"]"));
-    private SelenideElement signInButton = $(By.xpath("//*[@id=\"signInSubmit\"]"));
-    private SelenideElement passwordErrorBox = $(By.xpath("//*[@id=\"auth-error-message-box\"]/div"));
+    private SelenideElement passwordTextArea = $(By.id("ap_password"));
+    private SelenideElement signInButton = $(By.id("signInSubmit"));
+    private SelenideElement passwordErrorBox = $(By.id("auth-error-message-box"));
 
     public SelenideElement getPasswordTextArea() {
         return passwordTextArea;

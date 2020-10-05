@@ -1,7 +1,10 @@
 package stepdefs.barsStepdefs;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import services.elementsServices.barsServices.LeftHandNavbarService;
+
+import static org.junit.Assert.assertEquals;
 
 public class LeftHandNavBarStepdefs {
     private final LeftHandNavbarService leftHandNavbarService;
@@ -12,6 +15,7 @@ public class LeftHandNavBarStepdefs {
 
     @And("click on the category Electronics the left hand navbar")
     public void clickOnTheCategoryElectronicsTheLeftHandNavbar() {
-        leftHandNavbarService.clickElectronicsCategory();
+        leftHandNavbarService.clickFirstCategory();
     }
+
 }

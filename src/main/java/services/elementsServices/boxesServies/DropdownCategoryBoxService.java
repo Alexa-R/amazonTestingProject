@@ -10,7 +10,7 @@ public class DropdownCategoryBoxService {
     }
 
     public void clickOnThirdCategory() {
-        dropdownCategoryBox.getDropdownCategoryOption3().click();
+        dropdownCategoryBox.getDropdownCategoriesList().get(3).click();
     }
 
 }

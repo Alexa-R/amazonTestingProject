@@ -6,15 +6,14 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 public class FilterBar {
-    private SelenideElement computerRamCapacitySection32GB = $(By.xpath("//*[@id=\"p_n_feature_five_browse-bin/13580788011\"]/span/a/span"));
-    private SelenideElement avgCustomerReviewFourStarsAndUp = $(By.xpath("//*[@id=\"p_72/1248879011\"]/span/a/section/i"));
-
+    private SelenideElement computerRamCapacitySection32GB = $(By.xpath("//span[text() = '32 GB']"));
+    private SelenideElement reviewFourStarsAndUp = $(By.xpath("//*[contains(@class, 'star-medium-4')]"));
 
     public SelenideElement getComputerRamCapacitySection32GB() {
         return computerRamCapacitySection32GB;
     }
 
-    public SelenideElement getAvgCustomerReviewFourStarsAndUp() {
-        return avgCustomerReviewFourStarsAndUp;
+    public SelenideElement getReviewFourStarsAndUp() {
+        return reviewFourStarsAndUp;
     }
 }

@@ -6,25 +6,25 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 public class AddToCartResultPage {
-    private SelenideElement isTitleContainsAddedRightPanel = $(By.xpath("//*[@id=\"attachDisplayAddBaseAlert\"]/div/h4"));
-    private SelenideElement cartButtonRightPanel = $(By.xpath("//*[@id=\"attach-sidesheet-view-cart-button\"]/span/input"));
-    private SelenideElement isTitleContainsAddedOnPage = $(By.xpath("//*[@id=\"huc-v2-order-row-confirm-text\"]/h1"));
-    private SelenideElement cartButtonOnPage = $(By.xpath("//*[@id=\"hlb-ptc-btn-native\"]"));
+   // private SelenideElement isTitleContainsAddedRightPanel = $(By.xpath("//*[@id=\"attachDisplayAddBaseAlert\"]/div/h4"));
+    private SelenideElement cartButton = $(By.xpath("//*[@id=\"attach-sidesheet-view-cart-button\"]/span/input"));
+    private SelenideElement confirmMessage = $(By.xpath("//*[contains(@id, 'confirm-text') and contains(@class, 'success') or @id = \"attachDisplayAddBaseAlert\" and contains(@class, \"success\")]"));
+  //  private SelenideElement cartButtonOnPage = $(By.id("hlb-ptc-btn-native"));
 
-    public SelenideElement getIsTitleContainsAddedRightPanel() {
-        return isTitleContainsAddedRightPanel;
+//    public SelenideElement getIsTitleContainsAddedRightPanel() {
+//        return isTitleContainsAddedRightPanel;
+//    }
+
+    public SelenideElement getCartButton() {
+        return cartButton;
     }
 
-    public SelenideElement getCartButtonRightPanel() {
-        return cartButtonRightPanel;
+    public SelenideElement getConfirmMessage() {
+        return confirmMessage;
     }
 
-    public SelenideElement getIsTitleContainsAddedOnPage() {
-        return isTitleContainsAddedOnPage;
-    }
-
-    public SelenideElement getCartButtonOnPage() {
+ /*   public SelenideElement getCartButtonOnPage() {
         return cartButtonOnPage;
-    }
+    }*/
 }
 
