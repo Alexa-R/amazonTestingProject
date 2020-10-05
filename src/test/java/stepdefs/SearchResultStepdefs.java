@@ -46,4 +46,10 @@ public class SearchResultStepdefs {
     public void hoverOverAverageUserReviewOnTheOnTheSearchResultPageUsingTheSearchField() {
         searchResultPageService.hoverAvgCustomerReview();
     }
+
+    @Then("average user review value is greater than {int} and less than {int}")
+    public void averageUserReviewValueIsGreaterThanAndLessThan(int arg0, int arg1) {
+        assertTrue(Double.parseDouble(searchResultPageService.getValueOfReview()) > arg0
+                && Double.parseDouble(searchResultPageService.getValueOfReview()) <= arg1);
+    }
 }

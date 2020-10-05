@@ -26,6 +26,11 @@ public class SearchResultPageService {
     public double isSortingWorked() {
         return Double.parseDouble(searchResultPage.getFirstItemPrice().getValue()) - Double.parseDouble(searchResultPage.getSecondItemPrice().getValue());
     }
+    public String getValueOfReview() {
+        String reviewText = searchResultPage.getAvgCustomerReviewFirst().getText();
+        String[] list = reviewText.split(" ");
+        return list[0];
+    }
 
     public void hoverAvgCustomerReview() {
         searchResultPage.getAvgCustomerReviewFirst().hover();
