@@ -7,12 +7,12 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
-public class ElectronicsSubcategoriesList {
-    private ElementsCollection electronicsSubcategoryItems = $$(By.xpath("//*[@id=\"hmenu-content\"]/ul[5]/li[3]/a"));
+public class FirstCategorySubList {
+    private ElementsCollection FirstCategorySubListCollection = $$(By.xpath("//*[@id=\"hmenu-content\"]/ul[5]/li"));
     private SelenideElement titleOfSubcategoriesList = $(By.xpath("//*[@id=\"hmenu-content\"]/ul[5]/li[2]/div"));
 
-    public ElementsCollection getElectronicsSubcategoryItems() {
-        return electronicsSubcategoryItems;
+    public ElementsCollection getFirstCategorySubListCollection() {
+        return FirstCategorySubListCollection;
     }
 
     public SelenideElement getTitleOfSubcategoriesList() {
