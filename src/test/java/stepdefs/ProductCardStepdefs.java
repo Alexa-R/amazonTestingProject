@@ -18,11 +18,6 @@ public class ProductCardStepdefs {
         assertTrue(productCardPageService.isProductTitleDisplayed());
     }
 
-    @Then("title is visible on the product card page")
-    public void titleIsVisibleOnTheProductCardPage() {
-        productCardPageService.isProductTitleDisplayed();
-    }
-
     @When("click on the button Add to cart on the product cart page")
     public void clickOnTheButtonAddToCartOnTheProductcartPageUsingTheSearchField() {
         productCardPageService.clickAddToCartButton();
