@@ -20,6 +20,6 @@ public class NavigationStepdefs {
     public void siteIsOpened(String url) {
         open(url);
         getWebDriver().manage().window().maximize();
-        getWebDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        getWebDriver().manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
     }
 }

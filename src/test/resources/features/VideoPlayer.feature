@@ -1,9 +1,7 @@
 Feature: Video player
 
   Background:
-    Given site "https://www.amazon.com" is opened
-    And search for "Super Mario 3D All-Stars - Nintendo Switch" in the search field on the page header
-    And open the first result on the search result page
+    Given site "https://www.amazon.com/Super-Mario-3D-All-Stars-Nintendo-Switch/dp/B08G3MN6KP/ref=lp_16225016011_1_1?s=videogames-intl-ship&ie=UTF8&qid=1601976280&sr=1-1" is opened
     And click on the Video on the product cart page
     And run the video on the Video Window
 

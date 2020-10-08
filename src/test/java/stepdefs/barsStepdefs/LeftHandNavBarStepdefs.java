@@ -13,7 +13,7 @@ public class LeftHandNavBarStepdefs {
         this.leftHandNavbarService = leftHandNavbarService;
     }
 
-    @And("click on the category Electronics the left hand navbar")
+    @And("click on the category Electronics on the left hand navbar")
     public void clickOnTheCategoryElectronicsTheLeftHandNavbar() {
         leftHandNavbarService.clickFirstCategory();
     }

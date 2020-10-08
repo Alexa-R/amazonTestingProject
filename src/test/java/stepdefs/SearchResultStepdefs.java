@@ -16,12 +16,6 @@ public class SearchResultStepdefs {
         this.searchResultPageService = searchResultPageService;
     }
 
-    @And("open the first ElectronicsProduct on the search result page")
-    public void firstElectronicsProductIsOpenedOnTheSearchResultPageUsingCategoryMenu() {
-        WebDriverWait wait = new WebDriverWait(getWebDriver(), 50);
-        searchResultPageService.openFirstProduct();
-    }
-
     @And("open the first result on the search result page")
     public void openTheFirstResultOnTheSearchResultPageUsingTheSearchField() {
         searchResultPageService.openFirstProduct();
@@ -39,7 +33,7 @@ public class SearchResultStepdefs {
 
     @Then("the first element is displayed according to the sorting on the search result page")
     public void theFirstElementIsDisplayedAccordingToTheSortingOnTheSearchResultPageUsingTheSearchField() {
-        assertTrue(searchResultPageService.isSortingWorked()>0);
+        assertTrue(searchResultPageService.isSortingWorked() > 0);
     }
 
     @And("hover over average user review on the on the search result page")

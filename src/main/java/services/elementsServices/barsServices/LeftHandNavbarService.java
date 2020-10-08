@@ -10,7 +10,7 @@ public class LeftHandNavbarService {
     }
 
     public void clickFirstCategory() {
-        leftHandNavbar.getProductCategoriesList().get(6).click();
+        leftHandNavbar.getProductCategoriesList().get(5).click();
     }
 
 }

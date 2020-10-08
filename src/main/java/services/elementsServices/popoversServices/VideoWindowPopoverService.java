@@ -21,8 +21,8 @@ public class VideoWindowPopoverService {
         jsExecutor.executeScript("arguments[0].pause()", videoWindowPopover.getVideoPlayer());
     }
 
-    public double getDurationOfTheVideo(){
-        return (Double) jsExecutor.executeScript("return arguments[0].duration", videoWindowPopover.getVideoPlayer());
+    public long getDurationOfTheVideo(){
+        return (Long) jsExecutor.executeScript("return arguments[0].duration", videoWindowPopover.getVideoPlayer());
     }
 
     public boolean isPlayIconDisplayed(){

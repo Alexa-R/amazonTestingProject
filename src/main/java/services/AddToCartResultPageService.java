@@ -1,5 +1,6 @@
 package services;
 
+import com.codeborne.selenide.Condition;
 import pages.AddToCartResultPage;
 
 public class AddToCartResultPageService {
@@ -10,7 +11,7 @@ public class AddToCartResultPageService {
     }
 
     public boolean isItemAdded() {
-        return addToCartResultPage.getConfirmMessage().isDisplayed();
+        return addToCartResultPage.getConfirmMessage().should(Condition.visible).isDisplayed();
     }
 
     public void clickCartButton() {

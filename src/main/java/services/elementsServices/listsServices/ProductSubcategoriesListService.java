@@ -10,10 +10,10 @@ public class ProductSubcategoriesListService {
     }
 
     public void clickFirstSubcategory() {
-        productSubcategoriesList.getProductSubcategoriesList().get(3).click();
+        productSubcategoriesList.getProductSubcategoriesList().get(2).click();
     }
 
     public String getTitleNameOfSubcategoryList() {
-        return productSubcategoriesList.getProductSubcategoriesList().get(2).getText();
+        return productSubcategoriesList.getProductSubcategoriesList().get(1).getText();
     }
 }

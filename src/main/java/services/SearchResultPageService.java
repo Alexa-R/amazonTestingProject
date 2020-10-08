@@ -1,6 +1,9 @@
 package services;
 
+import com.codeborne.selenide.Condition;
 import pages.SearchResultPage;
+
+import java.util.Objects;
 
 import static org.junit.Assert.assertTrue;
 
@@ -24,10 +27,10 @@ public class SearchResultPageService {
     }
 
     public double isSortingWorked() {
-        return Double.parseDouble(searchResultPage.getFirstItemPrice().getValue()) - Double.parseDouble(searchResultPage.getSecondItemPrice().getValue());
+        return Double.parseDouble(Objects.requireNonNull(searchResultPage.getFirstItemPrice().getValue())) - Double.parseDouble(searchResultPage.getSecondItemPrice().getValue());
     }
     public String getValueOfReview() {
-        String reviewText = searchResultPage.getAvgCustomerReviewFirst().getText();
+        String reviewText = searchResultPage.getAvgReviewOnPopover().getText();
         String[] list = reviewText.split(" ");
         return list[0];
     }

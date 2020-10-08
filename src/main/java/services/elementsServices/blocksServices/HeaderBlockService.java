@@ -1,5 +1,6 @@
 package services.elementsServices.blocksServices;
 
+import com.codeborne.selenide.Condition;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import pages.elements.blocks.HeaderBlock;
@@ -14,7 +15,7 @@ public class HeaderBlockService {
     }
 
     public void hoverOverAccountAndLists() {
-        headerBlock.getAccountsAndLists().hover();
+        headerBlock.getAccountsAndLists().should(Condition.visible).hover();
     }
 
     public void typeAndSearchProduct(String productName) {

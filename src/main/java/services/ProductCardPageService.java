@@ -15,7 +15,7 @@ public class ProductCardPageService {
         if (productCardPage.getSeeAllBuyingOptionsButton().isDisplayed()) {
             productCardPage.getSeeAllBuyingOptionsButton().click();
         }
-        productCardPage.getAddToCartButton().click();
+            productCardPage.getAddToCartButton().click();
     }
     public boolean isLandingPictureImage() {
         return productCardPage.getLandingPicture().isImage();

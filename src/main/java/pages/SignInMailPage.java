@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class SignInMailPage {
     private SelenideElement mailTextArea = $(By.id("ap_email"));
-    private SelenideElement continueButton = $(By.xpath("continue"));
+    private SelenideElement continueButton = $(By.id("continue"));
     private SelenideElement registrationSection = $(By.id("authportal-main-section"));
 
     public SelenideElement getMailTextArea() {

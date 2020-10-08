@@ -2,6 +2,7 @@ package stepdefs;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import services.AddToCartResultPageService;
 
 import static org.junit.Assert.assertTrue;
@@ -19,7 +20,7 @@ public class AddToCartResultPageStepdefs {
     }
 
     @Then("the message that the item has been added is displayed")
-    public void theMessageThatTheItemHasBeenIsDisplayed(String arg0) {
+    public void theMessageThatTheItemHasBeenIsDisplayed() {
         assertTrue(addToCartResultPageService.isItemAdded());
     }
 }

@@ -7,8 +7,13 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class CartRightPanel {
     private SelenideElement cartRightPanelBox = $(By.id("ewc-compact-body"));
+    private SelenideElement closeRightPanel = $(By.id("attach-close_sideSheet-link"));
 
     public SelenideElement getCartRightPanelBox() {
         return cartRightPanelBox;
+    }
+
+    public SelenideElement getCloseRightPanel() {
+        return closeRightPanel;
     }
 }

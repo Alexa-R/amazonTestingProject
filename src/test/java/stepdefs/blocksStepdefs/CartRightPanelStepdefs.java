@@ -15,7 +15,6 @@ public class CartRightPanelStepdefs {
 
     @Then("is the Cart right panel displayed")
     public void isTheCartRightPanelDisplayed() {
-
         assertTrue(cartRightPanelService.isCartRightPanelBoxDisplayed());
     }
 }

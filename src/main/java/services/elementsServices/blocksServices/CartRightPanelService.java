@@ -10,7 +10,10 @@ public class CartRightPanelService {
         this.cartRightPanel = cartRightPanel;
     }
 
-    public boolean isCartRightPanelBoxDisplayed(){
-       return cartRightPanel.getCartRightPanelBox().isDisplayed();
+    public boolean isCartRightPanelBoxDisplayed() {
+        if (cartRightPanel.getCloseRightPanel().isDisplayed()) {
+            cartRightPanel.getCloseRightPanel().click();
+        }
+        return cartRightPanel.getCartRightPanelBox().isDisplayed();
     }
 }

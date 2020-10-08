@@ -10,5 +10,5 @@ Feature: Select product category
 
   Scenario: Select product category using left hand navbar on the header
     When open the left hand navbar on the page header
-    And click on the category Electronics the left hand navbar
+    And click on the category Electronics on the left hand navbar
     Then the name of the category "Electronics" is displayed in the title of the subcategories list
