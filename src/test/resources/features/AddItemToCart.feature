@@ -2,7 +2,7 @@ Feature: Add item to cart
 
   Background:
     Given site "https://www.amazon.com" is opened
-    And search for "Apple MacBook Pro 15" in the search field on the page header
+    And search for "Apple MacBook Pro 16" in the search field on the page header
     And open the first result on the search result page
 
   Scenario: user successfully adds a product to the cart

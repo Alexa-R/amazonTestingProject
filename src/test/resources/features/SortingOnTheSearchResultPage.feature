@@ -1,4 +1,4 @@
-Feature: Filter on the search result page
+Feature: Sorting on the search result page
 
   Background:
     Given site "https://www.amazon.com" is opened

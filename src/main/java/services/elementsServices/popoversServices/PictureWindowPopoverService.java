@@ -1,6 +1,7 @@
 package services.elementsServices.popoversServices;
 
 
+import com.codeborne.selenide.Condition;
 import pages.elements.popovers.PictureWindowPopover;
 
 public class PictureWindowPopoverService {
@@ -11,7 +12,7 @@ public class PictureWindowPopoverService {
     }
 
     public void clickOnTheActivePicture() {
-        pictureWindowPopover.getActivePicture().click();
+        pictureWindowPopover.getActivePicture().should(Condition.visible).click();
     }
 
     public boolean isZoomIn() {

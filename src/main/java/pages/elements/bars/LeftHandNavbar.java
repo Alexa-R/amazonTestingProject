@@ -17,15 +17,4 @@ public class LeftHandNavbar {
     public ElementsCollection getProductCategoriesList() {
         return productCategoriesList;
     }
-
-    /*private ProductSubcategoriesList productSubcategoriesList = new ProductSubcategoriesList();
-    private ProductCategoriesList productCategoriesList = new ProductCategoriesList();
-
-    public ProductCategoriesList getProductCategoriesList() {
-        return productCategoriesList;
-    }
-
-    public ProductSubcategoriesList getProductSubcategoriesList() {
-        return productSubcategoriesList;
-    }*/
 }

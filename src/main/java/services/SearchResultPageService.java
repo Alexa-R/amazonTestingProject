@@ -27,7 +27,13 @@ public class SearchResultPageService {
     }
 
     public double isSortingWorked() {
-        return Double.parseDouble(Objects.requireNonNull(searchResultPage.getFirstItemPrice().getValue())) - Double.parseDouble(searchResultPage.getSecondItemPrice().getValue());
+        String firstPriceComma = searchResultPage.getFirstItemPrice().getText();
+        String secondPriceComma = searchResultPage.getSecondItemPrice().getText();
+        String[] firstPriceSplit = firstPriceComma.split(",");
+        String[] secondPriceSplit = secondPriceComma.split(",");
+        double firstPrice = Double.parseDouble(firstPriceSplit[0] + "." + firstPriceSplit[1]);
+        double secondPrice = Double.parseDouble(secondPriceSplit[0] + "." + secondPriceSplit[1]);
+        return firstPrice - secondPrice;
     }
     public String getValueOfReview() {
         String reviewText = searchResultPage.getAvgReviewOnPopover().getText();

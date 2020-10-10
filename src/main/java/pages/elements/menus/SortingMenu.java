@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class SortingMenu {
-    private ElementsCollection parametersList = $$(By.id("//*[@class=\"a-nostyle a-list-link\"]/li"));
+    private ElementsCollection parametersList = $$(By.xpath("//*[@class=\"a-nostyle a-list-link\"]/li"));
 
     public ElementsCollection getParametersList() {
         return parametersList;

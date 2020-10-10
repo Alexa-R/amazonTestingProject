@@ -10,7 +10,7 @@ Feature: Search product
 
   Scenario: Search for product using left hand navbar
     When open the left hand navbar on the page header
-    And click on the category Electronics the left hand navbar
+    And click on the category Electronics on the left hand navbar
     And click on the Accessories&Supplies in the list of subcategories of the Electronics category
     And open the first result on the search result page
     Then title is visible on the product card page

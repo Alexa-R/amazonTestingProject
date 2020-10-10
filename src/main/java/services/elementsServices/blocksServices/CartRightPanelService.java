@@ -1,6 +1,9 @@
 package services.elementsServices.blocksServices;
 
+import com.codeborne.selenide.Condition;
 import pages.elements.blocks.CartRightPanel;
+
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 
 public class CartRightPanelService {
@@ -11,9 +14,11 @@ public class CartRightPanelService {
     }
 
     public boolean isCartRightPanelBoxDisplayed() {
-        if (cartRightPanel.getCloseRightPanel().isDisplayed()) {
+        if (cartRightPanel.getCloseRightPanel().exists()) {
             cartRightPanel.getCloseRightPanel().click();
+            getWebDriver().navigate().refresh();
         }
         return cartRightPanel.getCartRightPanelBox().isDisplayed();
     }
+
 }
