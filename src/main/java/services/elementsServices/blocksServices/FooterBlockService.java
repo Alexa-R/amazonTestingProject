@@ -9,15 +9,15 @@ public class FooterBlockService {
         this.footerBlock = footerBlock;
     }
 
-    public void scrollToFooter(){
+    public void scrollToFooter() {
         footerBlock.getFooterBox().scrollTo();
     }
 
-    public void clickOnDropdownLanguageMenu(){
+    public void clickOnDropdownLanguageMenu() {
         footerBlock.getDropdownLanguageMenu().click();
     }
 
-    public boolean getTextDropdownLanguageMenu(String language){
-       return footerBlock.getDropdownLanguageMenu().getText().toUpperCase().contains(language.toUpperCase());
+    public String getTextDropdownLanguageMenu() {
+        return footerBlock.getDropdownLanguageMenu().getText().toUpperCase();
     }
 }

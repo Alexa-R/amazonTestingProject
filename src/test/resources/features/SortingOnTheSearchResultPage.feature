@@ -2,7 +2,9 @@ Feature: Sorting on the search result page
 
   Background:
     Given site "https://www.amazon.com" is opened
-      And search for "Apple MacBook Pro 15" in the search field on the page header
+    When open the left hand navbar on the page header
+    And click on the category Electronics on the left hand navbar
+    And click on the Accessories&Supplies in the list of subcategories of the Electronics category
 
   Scenario: Sort products by Price: High to Low
     When click on the sorting menu on the search result page

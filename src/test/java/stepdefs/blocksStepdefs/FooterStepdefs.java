@@ -5,7 +5,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import services.elementsServices.blocksServices.FooterBlockService;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 
@@ -28,6 +27,6 @@ public class FooterStepdefs {
 
     @Then("the {string} is displayed in the language menu on the site footer")
     public void theIsDisplayedInTheLanguageMenuOnTheSiteFooter(String arg0) {
-        assertTrue(footerBlockService.getTextDropdownLanguageMenu(arg0));
+        assertTrue(footerBlockService.getTextDropdownLanguageMenu().contains(arg0.toUpperCase()));
     }
 }

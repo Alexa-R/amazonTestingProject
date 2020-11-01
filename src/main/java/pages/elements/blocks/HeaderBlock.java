@@ -1,6 +1,7 @@
 package pages.elements.blocks;
 
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import pages.elements.boxes.DropdownCategoryBox;
@@ -17,6 +18,7 @@ public class HeaderBlock {
     private SelenideElement dropdownCategoryBox = $(By.id("searchDropdownBox"));
     private SelenideElement returnsAndOrdersField = $(By.id("nav-orders"));
     private SelenideElement dropdownLanguageMenu = $(By.id("icp-nav-flyout"));
+    private SelenideElement location = $(By.xpath("//*[@id=\"nav-global-location-slot\"]/span"));
 
     public SelenideElement getAccountsAndLists() {
         return accountsAndLists;
@@ -50,5 +52,7 @@ public class HeaderBlock {
         return dropdownLanguageMenu;
     }
 
-
+    public SelenideElement getLocation() {
+        return location;
+    }
 }

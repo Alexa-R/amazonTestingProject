@@ -1,6 +1,11 @@
 package services;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ProductCardPage;
+
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class ProductCardPageService {
     private final ProductCardPage productCardPage;
@@ -13,10 +18,15 @@ public class ProductCardPageService {
         return productCardPage.getProductTitle().isDisplayed();
     }
 
-    public void clickAddToCartButton() {
-        if (productCardPage.getSeeAllBuyingOptionsButton().isDisplayed()) {
-            productCardPage.getSeeAllBuyingOptionsButton().click();
+    public void clickNoButton() {
+        WebElement explicitWait = (new WebDriverWait(getWebDriver(), 10))
+                .until(ExpectedConditions.visibilityOf(productCardPage.getNoButton()));
+        if (productCardPage.getNoButton().isDisplayed()) {
+            productCardPage.getNoButton().click();
         }
+    }
+
+    public void clickAddToCartButton() {
         productCardPage.getAddToCartButton().click();
     }
 

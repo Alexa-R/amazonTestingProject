@@ -11,6 +11,7 @@ public class ProductCardPage {
     private SelenideElement addToCartButton = $(By.xpath("//*[@id=\"add-to-cart-button\" or @name=\"submit.addToCart\"]"));
     private SelenideElement landingPicture = $(By.id("landingImage"));
     private SelenideElement video = $(By.xpath("//*[@id=\"altImages\"]/ul/li[contains(@class, 'video') and contains(@class, 'item')]"));
+    private SelenideElement noButton = $(By.xpath("//*[@id=\"attachSiNoCoverage\"]"));
 
     public SelenideElement getProductTitle() {
         return productTitle;
@@ -30,5 +31,9 @@ public class ProductCardPage {
 
     public SelenideElement getVideo() {
         return video;
+    }
+
+    public SelenideElement getNoButton() {
+        return noButton;
     }
 }

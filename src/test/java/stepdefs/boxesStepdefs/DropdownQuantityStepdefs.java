@@ -15,5 +15,4 @@ public class DropdownQuantityStepdefs {
     public void selectChooseAnAmountEqualToTwoInTheDropdownQuantityList() {
         dropdownQuantityBoxServices.selectTwoInTheDropdownQuantityList();
     }
-
 }

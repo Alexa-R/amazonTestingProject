@@ -21,12 +21,11 @@ public class VideoWindowPopoverService {
         jsExecutor.executeScript("arguments[0].pause()", videoWindowPopover.getVideoPlayer());
     }
 
-    public long getDurationOfTheVideo(){
+    public long getDurationOfTheVideo() {
         return (Long) jsExecutor.executeScript("return arguments[0].duration", videoWindowPopover.getVideoPlayer());
     }
 
-    public boolean isPlayIconDisplayed(){
-      return videoWindowPopover.getPlayIcon().isDisplayed();
+    public boolean isPlayIconDisplayed() {
+        return videoWindowPopover.getPlayIcon().isDisplayed();
     }
-
 }

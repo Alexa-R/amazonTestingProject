@@ -10,8 +10,8 @@ public class LanguageSettingsStepdefs {
         this.languageSettingsMenuService = languageSettingsMenuService;
     }
 
-    @And("select the Espanol - ES language from the Language Settings menu")
-    public void selectTheEspanolESLanguageFromTheLanguageSettingsMenu() {
+    @And("select the Deutsch language from the Language Settings menu")
+    public void selectTheDeutschLanguageFromTheLanguageSettingsMenu() {
         languageSettingsMenuService.selectSecondLanguage();
     }
 

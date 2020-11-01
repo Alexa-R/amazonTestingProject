@@ -10,7 +10,7 @@ public class LanguageSettingsMenuService {
     }
 
     public void selectSecondLanguage() {
-        languageSettingsMenu.getLanguagesList().get(1).click();
+        languageSettingsMenu.getLanguagesList().get(3).click();
     }
 
     public void clickSaveChangesButton() {

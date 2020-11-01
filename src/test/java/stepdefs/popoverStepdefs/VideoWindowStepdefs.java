@@ -14,12 +14,12 @@ public class VideoWindowStepdefs {
     }
 
     @And("run the video on the Video Window")
-    public void runTheVideoOnTheVideoWindow(){
+    public void runTheVideoOnTheVideoWindow() {
         videoWindowPopoverService.playVideo();
     }
 
     @Then("the video on the Video Window is played")
-    public void theVideoOnTheVideoWindowIsPlayed(){
+    public void theVideoOnTheVideoWindowIsPlayed() {
         assertFalse(videoWindowPopoverService.isPlayIconDisplayed());
     }
 

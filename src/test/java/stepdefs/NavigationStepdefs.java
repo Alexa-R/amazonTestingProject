@@ -11,6 +11,7 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class NavigationStepdefs {
 
+
     @After
     public void closeBrowser() {
         closeWebDriver();

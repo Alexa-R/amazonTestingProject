@@ -17,7 +17,6 @@ public class SearchResultPage {
     private SelenideElement avgReviewOnPopover = $(By.xpath("//*[contains(@id, 'a-popover-content')]/div/div/div/div[1]/span"));
 
 
-
     public SelenideElement getFirstItem() {
         return firstItem;
     }

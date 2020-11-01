@@ -21,6 +21,7 @@ public class ProductCardStepdefs {
     @When("click on the button Add to cart on the product cart page")
     public void clickOnTheButtonAddToCartOnTheProductcartPageUsingTheSearchField() {
         productCardPageService.clickAddToCartButton();
+        productCardPageService.clickNoButton();
     }
 
     @Then("the landing picture on the product card page is the image")

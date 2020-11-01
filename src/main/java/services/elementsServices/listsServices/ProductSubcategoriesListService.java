@@ -1,6 +1,11 @@
 package services.elementsServices.listsServices;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.elements.lists.ProductSubcategoriesList;
+
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class ProductSubcategoriesListService {
     private final ProductSubcategoriesList productSubcategoriesList;
@@ -10,6 +15,7 @@ public class ProductSubcategoriesListService {
     }
 
     public void clickFirstSubcategory() {
+        WebDriverWait explicitWait = new WebDriverWait(getWebDriver(), 10);
         productSubcategoriesList.getProductSubcategoriesList().get(2).click();
     }
 

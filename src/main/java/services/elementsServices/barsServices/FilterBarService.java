@@ -17,7 +17,7 @@ public class FilterBarService {
         filterBar.getComputerRamCapacitySection32GB().click();
     }
 
-    public void clickOnAvgCustomerReviewFourStarsAndUp(){
+    public void clickOnAvgCustomerReviewFourStarsAndUp() {
         filterBar.getReviewFourStarsAndUp().click();
     }
 }

@@ -54,3 +54,5 @@ buildNumber.properties
 /build/
 /.idea/
 /.allure/
+
+.DS_Store

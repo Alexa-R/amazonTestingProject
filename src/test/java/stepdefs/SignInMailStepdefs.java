@@ -26,6 +26,6 @@ public class SignInMailStepdefs {
 
     @Then("Login page is opened")
     public void loginPageIsOpened() {
-       assertTrue(signInMailPageService.isRegistrationSectionDisplayed());
+        assertTrue(signInMailPageService.isRegistrationSectionDisplayed());
     }
 }

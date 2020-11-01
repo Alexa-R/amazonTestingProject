@@ -2,9 +2,7 @@ Feature: Zoom in
 
   Background:
     Given site "https://www.amazon.com" is opened
-    And open the left hand navbar on the page header
-    And click on the category Electronics on the left hand navbar
-    And click on the Accessories&Supplies in the list of subcategories of the Electronics category
+    And search for "Apple MacBook" in the search field on the page header
     And open the first result on the search result page
 
   Scenario: Zoom in the product image

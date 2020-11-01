@@ -9,7 +9,7 @@ public class SortingMenuService {
         this.sortingMenu = sortingMenu;
     }
 
-    public void selectPriceHighToLowParameter(){
+    public void selectPriceHighToLowParameter() {
         sortingMenu.getParametersList().get(2).click();
     }
 }

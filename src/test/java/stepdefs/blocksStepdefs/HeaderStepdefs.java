@@ -58,5 +58,10 @@ public class HeaderStepdefs {
     public void hoverOverTheDropdownLanguageMenuOnTheSiteHeader() {
         headerBlockService.hoverOverDropdownLanguageMenu();
     }
+
+    @When("click on Location Box on the page header")
+    public void clickOnLocationBoxOnThePageHeader() {
+        headerBlockService.clickOnLocation();
+    }
 }
 

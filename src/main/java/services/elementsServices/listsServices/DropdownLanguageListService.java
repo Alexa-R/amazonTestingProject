@@ -1,19 +1,19 @@
 package services.elementsServices.listsServices;
 
-import pages.elements.lists.DropdownLanguageList;
+import pages.elements.lists.DropdownLanguagesList;
 
 public class DropdownLanguageListService {
-    private final DropdownLanguageList dropdownLanguageList;
+    private final DropdownLanguagesList dropdownLanguagesList;
 
-    public DropdownLanguageListService(DropdownLanguageList dropdownLanguageListService) {
-        this.dropdownLanguageList = dropdownLanguageListService;
+    public DropdownLanguageListService(DropdownLanguagesList dropdownLanguagesListService) {
+        this.dropdownLanguagesList = dropdownLanguagesListService;
     }
 
     public void selectSpanishInLanguageList() {
-        dropdownLanguageList.getLanguagesCollection().get(0).click();
+        dropdownLanguagesList.getLanguagesCollection().get(0).click();
     }
 
-    public boolean isSpanishInLanguageListSelected(){
-        return dropdownLanguageList.getLanguagesCollection().get(0).isSelected();
+    public boolean isSpanishInLanguageListSelected() {
+        return dropdownLanguagesList.getLanguagesCollection().get(0).isSelected();
     }
 }

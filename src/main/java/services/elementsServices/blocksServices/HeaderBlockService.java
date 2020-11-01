@@ -20,7 +20,8 @@ public class HeaderBlockService {
 
     public void typeAndSearchProduct(String productName) {
         Actions builder = new Actions(getWebDriver());
-        builder.sendKeys(headerBlock.getSearchField(), productName).sendKeys(Keys.RETURN).build().perform();
+        builder.sendKeys(headerBlock.getSearchField(), productName)
+                .sendKeys(Keys.RETURN).build().perform();
     }
 
     public void clickLeftHandNavbarGamburgerMenu() {
@@ -49,6 +50,10 @@ public class HeaderBlockService {
 
     public void hoverOverDropdownLanguageMenu() {
         headerBlock.getDropdownLanguageMenu().hover();
+    }
+
+    public void clickOnLocation() {
+        headerBlock.getLocation().click();
     }
 
 

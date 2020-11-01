@@ -9,16 +9,15 @@ public class SignInPasswordPageService {
         this.signInPasswordPage = signInPasswordPage;
     }
 
-    public void pastePasswordInTextArea(String password){
+    public void pastePasswordInTextArea(String password) {
         signInPasswordPage.getPasswordTextArea().sendKeys(password);
     }
 
-    public void clickSignIn(){
+    public void clickSignIn() {
         signInPasswordPage.getSignInButton().click();
     }
 
-    public boolean displayedPasswordErrorBox(){
+    public boolean displayedPasswordErrorBox() {
         return signInPasswordPage.getPasswordErrorBox().isDisplayed();
     }
-
 }

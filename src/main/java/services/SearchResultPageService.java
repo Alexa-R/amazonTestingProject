@@ -22,7 +22,7 @@ public class SearchResultPageService {
         searchResultPage.getSortingMenu().click();
     }
 
-    public boolean isFilterWorked(String filter){
+    public boolean isFilterWorked(String filter) {
         return searchResultPage.getFirstItem().getText().toUpperCase().contains(filter.toUpperCase());
     }
 
@@ -35,6 +35,7 @@ public class SearchResultPageService {
         double secondPrice = Double.parseDouble(secondPriceSplit[0] + "." + secondPriceSplit[1]);
         return firstPrice - secondPrice;
     }
+
     public String getValueOfReview() {
         String reviewText = searchResultPage.getAvgReviewOnPopover().getText();
         String[] list = reviewText.split(" ");

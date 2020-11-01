@@ -1,4 +1,5 @@
 package stepdefs.listsStepdefs;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import services.elementsServices.listsServices.ProductSubcategoriesListService;
@@ -11,7 +12,6 @@ public class ElectronicsSubcategoryListStepdefs {
     public ElectronicsSubcategoryListStepdefs(ProductSubcategoriesListService productSubcategoriesListService) {
         this.productSubcategoriesListService = productSubcategoriesListService;
     }
-
 
     @And("click on the Accessories&Supplies in the list of subcategories of the Electronics category")
     public void clickOnTheAccessoriesSuppliesInTheListOfSubcategoriesOfTheElectronicsCategory() {

@@ -12,7 +12,7 @@ Feature: Change site language
   Scenario: Change site language in the site footer
     When scroll to page footer
     And click on the dropdown language menu on the site footer
-    And select the Espanol - ES language from the Language Settings menu
+    And select the Deutsch language from the Language Settings menu
     And click on Save Changes button on the Language Settings menu
     And scroll to page footer
-    Then the "ES" is displayed in the language menu on the site footer
+    Then the "Deutsch" is displayed in the language menu on the site footer

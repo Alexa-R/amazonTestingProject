@@ -9,15 +9,15 @@ public class SignInMailPageService {
         this.signInMailPage = signInMailPage;
     }
 
-    public void pasteMailInTextArea(String mail){
+    public void pasteMailInTextArea(String mail) {
         signInMailPage.getMailTextArea().sendKeys(mail);
     }
 
-    public void clickContinueButton(){
+    public void clickContinueButton() {
         signInMailPage.getContinueButton().click();
     }
 
-    public boolean isRegistrationSectionDisplayed(){
-       return signInMailPage.getRegistrationSection().isDisplayed();
+    public boolean isRegistrationSectionDisplayed() {
+        return signInMailPage.getRegistrationSection().isDisplayed();
     }
 }
