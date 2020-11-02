@@ -1,17 +1,17 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
+import helper.Locators;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class ProductCardPage {
-    private SelenideElement productTitle = $(By.id("productTitle"));
-    private SelenideElement seeAllBuyingOptionsButton = $(By.id("buybox-see-all-buying-choices-announce"));
+    private SelenideElement productTitle = $(Locators.get(this.getClass().getSimpleName() + ".productTitle"));
     private SelenideElement addToCartButton = $(By.xpath("//*[@id=\"add-to-cart-button\" or @name=\"submit.addToCart\"]"));
-    private SelenideElement landingPicture = $(By.id("landingImage"));
+    private SelenideElement landingPicture = $(Locators.get(this.getClass().getSimpleName() + ".landingPicture"));
     private SelenideElement video = $(By.xpath("//*[@id=\"altImages\"]/ul/li[contains(@class, 'video') and contains(@class, 'item')]"));
-    private SelenideElement noButton = $(By.xpath("//*[@id=\"attachSiNoCoverage\"]"));
+    private SelenideElement noButton = $(Locators.get(this.getClass().getSimpleName() + ".noButton"));
 
     public SelenideElement getProductTitle() {
         return productTitle;
@@ -19,10 +19,6 @@ public class ProductCardPage {
 
     public SelenideElement getAddToCartButton() {
         return addToCartButton;
-    }
-
-    public SelenideElement getSeeAllBuyingOptionsButton() {
-        return seeAllBuyingOptionsButton;
     }
 
     public SelenideElement getLandingPicture() {

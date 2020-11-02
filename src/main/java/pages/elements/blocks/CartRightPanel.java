@@ -1,13 +1,14 @@
 package pages.elements.blocks;
 
 import com.codeborne.selenide.SelenideElement;
+import helper.Locators;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class CartRightPanel {
-    private SelenideElement cartRightPanelBox = $(By.id("ewc-compact-body"));
-    private SelenideElement closeRightPanel = $(By.xpath("//*[@id=\"attach-close_sideSheet-link\"]"));
+    private SelenideElement cartRightPanelBox = $(Locators.get(this.getClass().getSimpleName() + ".cartRightPanelBox"));
+    private SelenideElement closeRightPanel = $(Locators.get(this.getClass().getSimpleName() + ".closeRightPanel"));
 
     public SelenideElement getCartRightPanelBox() {
         return cartRightPanelBox;

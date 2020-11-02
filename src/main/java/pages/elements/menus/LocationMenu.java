@@ -1,13 +1,14 @@
 package pages.elements.menus;
 
 import com.codeborne.selenide.SelenideElement;
+import helper.Locators;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class LocationMenu {
-    private SelenideElement countryBox = $(By.xpath("//*[@id=\"GLUXCountryListDropdown\"]"));
-    private SelenideElement doneButton = $(By.xpath("//*[@name=\"glowDoneButton\"]"));
+    private SelenideElement countryBox = $(Locators.get(this.getClass().getSimpleName() + ".countryBox"));
+    private SelenideElement doneButton = $(Locators.get(this.getClass().getSimpleName() + ".doneButton"));
 
     public SelenideElement getCountryBox() {
         return countryBox;

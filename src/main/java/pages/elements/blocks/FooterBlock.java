@@ -1,13 +1,14 @@
 package pages.elements.blocks;
 
 import com.codeborne.selenide.SelenideElement;
+import helper.Locators;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class FooterBlock {
-    private SelenideElement footerBox = $(By.id("navFooter"));
-    private SelenideElement dropdownLanguageMenu = $(By.id("icp-touch-link-language"));
+    private SelenideElement footerBox = $(Locators.get(this.getClass().getSimpleName() + ".footerBox"));
+    private SelenideElement dropdownLanguageMenu = $(Locators.get(this.getClass().getSimpleName() + ".dropdownLanguageMenu"));
 
     public SelenideElement getFooterBox() {
         return footerBox;

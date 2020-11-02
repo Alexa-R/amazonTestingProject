@@ -1,13 +1,14 @@
 package pages.elements.popovers;
 
 import com.codeborne.selenide.SelenideElement;
+import helper.Locators;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class VideoWindowPopover {
-    private SelenideElement videoPlayer = $(By.xpath("//video[contains(@id, 'detailpage-imageblock-player')]"));
-    private SelenideElement playIcon = $(By.xpath("//*[contains(@id, 'detailpage-imageblock-player')]/button/span[2]"));
+    private SelenideElement videoPlayer = $(Locators.get(this.getClass().getSimpleName() + ".videoPlayer"));
+    private SelenideElement playIcon = $(Locators.get(this.getClass().getSimpleName() + ".playIcon"));
 
     public SelenideElement getVideoPlayer() {
         return videoPlayer;

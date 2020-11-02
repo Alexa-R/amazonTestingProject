@@ -31,6 +31,6 @@ public class ShoppingCartStepdefs {
 
     @Then("the Quantity dropdown box contains in the title {string}")
     public void theQuantityDropdownBoxContainsInTheTitle(String arg0) {
-        shoppingCartPageService.isQuantityButtonContains().contains(arg0);
+        assertTrue(shoppingCartPageService.isQuantityButtonContains().contains(arg0));
     }
 }

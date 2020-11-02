@@ -3,6 +3,7 @@ package pages.elements.blocks;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import helper.Locators;
 import org.openqa.selenium.By;
 import pages.elements.boxes.DropdownCategoryBox;
 
@@ -10,15 +11,15 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class HeaderBlock {
-    private SelenideElement accountsAndLists = $(By.id("nav-link-accountList"));
-    private SelenideElement searchField = $(By.id("twotabsearchtextbox"));
-    private SelenideElement leftHandNavbarGamburgerMenu = $(By.id("nav-hamburger-menu"));
-    private SelenideElement todaysDealsField = $(By.id("nav-xshop"));
-    private SelenideElement logotype = $(By.id("nav-logo"));
-    private SelenideElement dropdownCategoryBox = $(By.id("searchDropdownBox"));
-    private SelenideElement returnsAndOrdersField = $(By.id("nav-orders"));
-    private SelenideElement dropdownLanguageMenu = $(By.id("icp-nav-flyout"));
-    private SelenideElement location = $(By.xpath("//*[@id=\"nav-global-location-slot\"]/span"));
+    private SelenideElement accountsAndLists = $(Locators.get(this.getClass().getSimpleName() + ".accountsAndLists"));
+    private SelenideElement searchField = $(Locators.get(this.getClass().getSimpleName() + ".searchField"));
+    private SelenideElement leftHandNavbarGamburgerMenu = $(Locators.get(this.getClass().getSimpleName() + ".leftHandNavbarGamburgerMenu"));
+    private SelenideElement todaysDealsField = $(Locators.get(this.getClass().getSimpleName() + ".todaysDealsField"));
+    private SelenideElement logotype = $(Locators.get(this.getClass().getSimpleName() + ".logotype"));
+    private SelenideElement dropdownCategoryBox = $(Locators.get(this.getClass().getSimpleName() + ".dropdownCategoryBox"));
+    private SelenideElement returnsAndOrdersField = $(Locators.get(this.getClass().getSimpleName() + ".returnsAndOrdersField"));
+    private SelenideElement dropdownLanguageMenu = $(Locators.get(this.getClass().getSimpleName() + ".dropdownLanguageMenu"));
+    private SelenideElement location = $(Locators.get(this.getClass().getSimpleName() + ".location"));
 
     public SelenideElement getAccountsAndLists() {
         return accountsAndLists;

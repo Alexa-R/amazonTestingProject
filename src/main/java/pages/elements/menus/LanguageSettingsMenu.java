@@ -2,14 +2,15 @@ package pages.elements.menus;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import helper.Locators;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class LanguageSettingsMenu {
-    private ElementsCollection languagesList = $$(By.xpath("//*[@id=\"customer-preferences\"]//div[@class=\"a-row a-spacing-mini\"]"));
-    private SelenideElement saveChangesButton = $(By.id("icp-btn-save"));
+    private ElementsCollection languagesList = $$(Locators.get(this.getClass().getSimpleName() + ".languagesList"));
+    private SelenideElement saveChangesButton = $(Locators.get(this.getClass().getSimpleName() + ".saveChangesButton"));
 
     public ElementsCollection getLanguagesList() {
         return languagesList;

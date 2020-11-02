@@ -1,16 +1,16 @@
 package pages.elements.lists;
 
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.SelenideElement;
+import helper.Locators;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class ProductSubcategoriesList {
-    private ElementsCollection ProductSubcategoriesList = $$(By.xpath("//*[@id=\"hmenu-content\"]/ul[5]/li"));
+    private ElementsCollection productSubcategoriesList = $$(Locators.get(this.getClass().getSimpleName() + ".productSubcategoriesList"));
 
     public ElementsCollection getProductSubcategoriesList() {
-        return ProductSubcategoriesList;
+        return productSubcategoriesList;
     }
 }
