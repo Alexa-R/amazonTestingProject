@@ -1,11 +1,10 @@
-
 ## 
-##Test automation project
+##Test automation project<br/>
 Web test automation project using IntelliJ IDEA Community, Java, 
 Maven, JUnit, Selenium WebDriver, Page Object Model (POM), Log4j, Allure.
 
 ## 
-##Test Subject
+##Test Subject<br/>
 I've picked www.amazon.com as a test subject for no particular reason. 
 It's a large site and has variety of features that we can play around with.
 
