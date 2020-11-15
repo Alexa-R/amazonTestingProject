@@ -22,7 +22,6 @@ public class NavigationStepdefs {
     public void siteIsOpened(String url) {
         open(url);
         getWebDriver().manage().window().maximize();
-        getWebDriver().manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
         Logger.info("Site is opened");
     }
 }

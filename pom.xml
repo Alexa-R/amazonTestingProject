@@ -9,53 +9,64 @@
     <version>1.0-SNAPSHOT</version>
     <properties>
         <aspectj.version>1.8.10</aspectj.version>
+        <cucumber-java8.version>5.7.0</cucumber-java8.version>
+        <cucumber-java.version>5.7.0</cucumber-java.version>
+        <cucumber-junit.version>5.7.0</cucumber-junit.version>
+        <cucumber-picocontainer.version>5.7.0</cucumber-picocontainer.version>
+        <selenide.version>5.14.0</selenide.version>
+        <allure-junit4.version>2.13.5</allure-junit4.version>
+        <allure-cucumber5-jvm.version>2.13.5</allure-cucumber5-jvm.version>
+        <log4j-api.version>2.13.3</log4j-api.version>
+        <log4j-core.version>2.13.3</log4j-core.version>
+        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+        <allure-maven.version>2.9</allure-maven.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java8</artifactId>
-            <version>5.7.0</version>
+            <version>${cucumber-java8.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>5.7.0</version>
+            <version>${cucumber-java.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>5.7.0</version>
+            <version>${cucumber-junit.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
-            <version>5.7.0</version>
+            <version>${cucumber-picocontainer.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>5.14.0</version>
+            <version>${selenide.version}</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit4</artifactId>
-            <version>2.13.5</version>
+            <version>${allure-junit4.version}</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-cucumber5-jvm</artifactId>
-            <version>2.13.5</version>
+            <version>${allure-cucumber5-jvm.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
-            <version>2.13.3</version>
+            <version>${log4j-api.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.13.3</version>
+            <version>${log4j-core.version}</version>
         </dependency>
     </dependencies>
 
@@ -75,7 +86,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>${maven-surefire-plugin.version}</version>
                 <configuration>
                     <rerunFailingTestsCount>1</rerunFailingTestsCount>
                     <argLine>
@@ -97,7 +108,7 @@
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
-                <version>2.9</version>
+                <version>${allure-maven.version}</version>
                 <configuration>
                     <reportVersion>2.6.0</reportVersion>
                 </configuration>

@@ -19,8 +19,6 @@ public class ProductCardPageService {
     }
 
     public void clickNoButton() {
-        WebElement explicitWait = (new WebDriverWait(getWebDriver(), 10))
-                .until(ExpectedConditions.visibilityOf(productCardPage.getNoButton()));
         if (productCardPage.getNoButton().isDisplayed()) {
             productCardPage.getNoButton().click();
         }
